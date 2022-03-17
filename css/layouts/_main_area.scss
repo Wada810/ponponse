@@ -1,0 +1,14 @@
+.l_main_area{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    &__nav{
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+    }
+    &__contents{
+        grid-column: 2/3;
+    }
+}

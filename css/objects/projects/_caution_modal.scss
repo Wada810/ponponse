@@ -1,0 +1,25 @@
+.p_caution_modal{
+    background-color: $black;
+    color: $white;
+    &__title{
+        font-size: 1.2rem;
+        text-align: center;
+        &--enph{
+            font-weight: 800;
+            font-size: 1.2em;
+        }
+    }
+    &__caution{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__button{
+        border-color: $white;
+        transition: background-color 0.3s, color 0.3s;
+        &:hover{
+            background-color: $white;
+            color: $black;
+        }
+    }
+}

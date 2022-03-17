@@ -1,0 +1,11 @@
+.c_modal_close{
+    animation: close 0.5s forwards;
+}
+@keyframes close {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

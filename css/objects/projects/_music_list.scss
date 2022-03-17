@@ -1,0 +1,35 @@
+.p_music_list{
+    &__item{
+        $padding: 8px;
+        padding: $padding;
+        width: 120px;
+        height: 120px;
+        border-radius: 6px;
+        background-color: $lightgrey;
+        color: $darkgrey;
+        transition: background-color 0.3s;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &:hover{
+            background-color: $grey;
+        }
+        &__icon{
+            font-size: 16px;
+        }
+        &__playing{
+            position: absolute;
+            bottom: $padding;
+            left: $padding;
+        }
+        &__time{
+            text-align-last: right;
+        }
+
+        &--active{
+            @extend .p_music_list__item;
+            background-color: $black;
+            color: $white;
+        }
+    }
+}
