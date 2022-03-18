@@ -1,20 +1,20 @@
 .p_main_area{
-    &__nav{
-        padding: 20px;
-        background-color: $lightgrey;
-        &__title{
-            font-size: 1.3rem;
-            font-weight: 800;
-            padding-bottom: 5px;
-            border-bottom: 1px solid $black;
-            &__ver{
-                color: $darkgrey;
-                font-size: 1rem;
-                font-weight: 500;
-            }
-        }
-    }
     &__contents{
         padding: 30px 70px 30px 70px;
+    }
+}
+.p_nav{
+    padding: 20px;
+    background-color: $lightgrey;
+    &__title{
+        font-size: 1.3rem;
+        font-weight: 800;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $black;
+    }
+    &__ver{
+        color: $darkgrey;
+        font-size: 1rem;
+        font-weight: 500;
     }
 }

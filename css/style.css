@@ -480,14 +480,14 @@ html, body {
   grid-template-columns: 200px 1fr;
 }
 
-.l_main_area__nav {
+.l_main_area__contents {
+  grid-column: 2/3;
+}
+
+.l_nav {
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
-}
-
-.l_main_area__contents {
-  grid-column: 2/3;
 }
 
 .l_music_list {
@@ -556,26 +556,26 @@ html, body {
   color: #0f0f0f;
 }
 
-.p_main_area__nav {
+.p_main_area__contents {
+  padding: 30px 70px 30px 70px;
+}
+
+.p_nav {
   padding: 20px;
   background-color: #e4e4e4;
 }
 
-.p_main_area__nav__title {
+.p_nav__title {
   font-size: 1.3rem;
   font-weight: 800;
   padding-bottom: 5px;
   border-bottom: 1px solid #0f0f0f;
 }
 
-.p_main_area__nav__title__ver {
+.p_nav__ver {
   color: #5a5a5a;
   font-size: 1rem;
   font-weight: 500;
-}
-
-.p_main_area__contents {
-  padding: 30px 70px 30px 70px;
 }
 
 .p_music_list__item, .p_music_list__item--active {
@@ -595,23 +595,23 @@ html, body {
   background-color: #cac9c9;
 }
 
-.p_music_list__item__icon {
+.p_music_list__item--active {
+  background-color: #0f0f0f;
+  color: #f9f9fc;
+}
+
+.p_music_list__icon {
   font-size: 16px;
 }
 
-.p_music_list__item__playing {
+.p_music_list__playing {
   position: absolute;
   bottom: 8px;
   left: 8px;
 }
 
-.p_music_list__item__time {
+.p_music_list__time {
   text-align-last: right;
-}
-
-.p_music_list__item--active {
-  background-color: #0f0f0f;
-  color: #f9f9fc;
 }
 
 .u_pr5 {

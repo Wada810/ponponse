@@ -1,6 +1,6 @@
 .p_music_list{
+    $padding: 8px;
     &__item{
-        $padding: 8px;
         padding: $padding;
         width: 120px;
         height: 120px;
@@ -14,22 +14,22 @@
         &:hover{
             background-color: $grey;
         }
-        &__icon{
-            font-size: 16px;
-        }
-        &__playing{
-            position: absolute;
-            bottom: $padding;
-            left: $padding;
-        }
-        &__time{
-            text-align-last: right;
-        }
 
         &--active{
             @extend .p_music_list__item;
             background-color: $black;
             color: $white;
         }
+    }
+    &__icon{
+        font-size: 16px;
+    }
+    &__playing{
+        position: absolute;
+        bottom: $padding;
+        left: $padding;
+    }
+    &__time{
+        text-align-last: right;
     }
 }
